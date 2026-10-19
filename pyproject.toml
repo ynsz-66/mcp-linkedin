@@ -1,0 +1,16 @@
+[project]
+name = "mcp-linkedin"
+version = "0.1.0"
+description = "MCP server to search and read LinkedIn job offers without an account"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.27,<2",
+    "python-jobspy>=1.1.82",
+    "beautifulsoup4>=4.12",
+    "requests>=2.31",
+    "uvicorn>=0.30",
+    "pandas>=2.3.3",
+    "anyio>=4.15.1",
+    "starlette>=1.7.0",
+]

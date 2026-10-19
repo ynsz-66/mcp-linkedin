@@ -1,0 +1,10 @@
+services:
+  mcp-linkedin:
+    build: ./
+    container_name: mcp-linkedin
+    restart: unless-stopped
+    env_file: .env
+    networks:
+      - default
+    ports:
+      - "127.0.0.1:8080:8080"
